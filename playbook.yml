@@ -1,0 +1,15 @@
+---
+- hosts: 127.0.0.1
+  sudo: yes
+  connection: local
+
+  vars:
+    - mysql_root_password: root
+
+  roles:
+    - common
+    - apache2
+    - mysql-mariadb
+    - php5-multi
+    - composer
+    - ntp

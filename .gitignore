@@ -1,0 +1,7 @@
+packer_cache
+*.box
+output-*
+roles
+builds/*
+.DS_Store
+http
