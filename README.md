@@ -14,21 +14,20 @@ Download the latest packer from http://www.packer.io/downloads.html and unzip th
 
 If you're using Homebrew
 
-::
-
+```
     $ brew tap homebrew/binary
     $ brew install packer
-
+```
 
 Running Packer
 --------------
 
-::
+```
     $ git clone https://github.com/yappabe/packer-template
     $ cd packer-template
     $ git clone https://github.com/yappabe/ansible-roles
     $ packer build template.json
-
+```
 
 Supported versions
 ------------------
