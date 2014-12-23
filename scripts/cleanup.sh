@@ -1,5 +1,5 @@
 echo "cleaning up apt stuff"
-apt-get -y autoremove -y
+apt-get autoremove -y
 apt-get clean -y
 apt-get autoclean -y
 
@@ -32,4 +32,10 @@ find /var/log -type f | while read f; do echo -ne '' > $f; done;
 
 echo "remove cache"
 find /var/cache -type f -exec rm -rf {} \;
+
+echo "remove tmp content"
+rm -rf /tmp/*
+
+echo "remove build dir content"
+rm -rf /opt/build
 

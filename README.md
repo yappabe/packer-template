@@ -26,7 +26,7 @@ Running Packer
     $ git clone https://github.com/yappabe/packer-template
     $ cd packer-template
     $ git clone https://github.com/yappabe/ansible-roles
-    $ packer build template.json
+    $ ./create_box.sh
 ```
 
 Supported versions
